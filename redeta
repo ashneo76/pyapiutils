@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN"  "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+ <head>
+  <meta name="googlebot" content="noindex, nofollow, noarchive" />
+  <title id="PageTitle">
+   Sox-35th | CTA Train Tracker Mobile Estimated Arrivals
+  </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta content="initial-scale=1.0" name="viewport" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="cache-control" content="no-store" />
+  <meta http-equiv="expires" content="-1" />
+  <meta http-equiv="expires" content="Sat, 01 Jan 2000 07:00:00 GMT" />
+  <meta name="keywords" content="cta, chicago transit authority, chicago transit, transit, cta trip planner, chicago cta, cta chicago, cta bus cards, chicago public transportation, chicago transportation, chicago trains, chicago subway, chicago mass transit, chicago subway map, cta schedule, cta routes, chicago transit system, cta maps, cta expansions, chicago subway system, cta bus tracker, cta bus schedule, chicago transit map, chicago transit athority, cta transit, cta enterprises, chicago buses, cta map, cta directions, CTA Bus schedules, CTA Bus, Chicago Transit Authority buses
+" />
+  <meta name="description" content="" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="stylesheet" href="/includes/ttmobile.css" type="text/css" />
+  <link rel="shortcut icon" type="image/x-icon" href="traintracker.ico" />
+  <link rel="apple-touch-icon" href="traintrackertouchlogo.png" />
+ </head>
+ <body class="mainbody">
+  <form method="post" action="/mobile/traintrackerarrivals.aspx?sid=40190" id="main">
+   <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE0OTMyNTM4OTBkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBRNjdGwwMiRpbWdCdG5PcHRpb25zBRNjdGwwMiRpbWdCdG5SZWZyZXNog6gb9h9L+z4b0Xtv+MlVb8b0CjY=" />
+   <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLih7KDDwKUvsSUCAKC+fLICxcodsbEici8OFSQ/Y45a9NpCoE0" />
+   <div class="contentbody">
+    <div class="bdywrpr">
+     <div class="hdrwrpr">
+      <div class="prnthdr">
+       <a accesskey="1" href="/mobile/traintracker.aspx">
+        <img src="/images/global/ttmobile_logo.gif" style="border: 0px" alt="Go back to CTA Train Tracker(sm) mobile page" />
+       </a>
+      </div>
+     </div>
+     <div style="padding-bottom:15px;" class="corwrpr">
+      <div class="innerwrpr">
+       <div>
+        <div id="ctl02_pnlMain">
+         <div class="ttmobile_instruction">
+          <b>
+           Next service as of:
+          </b>
+          Wed Aug. 24, 8:09AM
+         </div>
+         <br />
+         <div class="ttmobile_stationname">
+          Sox-35th
+         </div>
+         <div id="ttmobile_arrivalbuttons">
+          <div id="ctl02_rptPredictions_ctl00_pnlSeperator" class="tt_mobile_seperator_bar">
+           <p>
+            Service toward Howard
+           </p>
+          </div>
+          <div id="ctl02_rptPredictions_ctl00_divColor" class="ttmobile_red">
+           <span class="nexttraindesc">
+            Red
+                        &gt;
+                        Howard
+           </span>
+           <span class="nexttrainarrv">
+            <b>
+             7
+            </b>
+            min
+           </span>
+          </div>
+          <div id="ctl02_rptPredictions_ctl01_divColor" class="ttmobile_red">
+           <span class="nexttraindesc">
+            Red
+                        &gt;
+                        Howard
+           </span>
+           <span class="nexttrainarrv">
+            <b>
+             12
+            </b>
+            min
+           </span>
+          </div>
+          <div id="ctl02_rptPredictions_ctl02_pnlSeperator" class="tt_mobile_seperator_bar">
+           <p>
+            Service toward 95th
+           </p>
+          </div>
+          <div id="ctl02_rptPredictions_ctl02_divColor" class="ttmobile_red">
+           <span class="nexttraindesc">
+            Red
+                        &gt;
+                        95th/Dan Ryan
+           </span>
+           <span class="nexttrainarrv">
+            <b>
+             Due
+            </b>
+           </span>
+          </div>
+          <div id="ctl02_rptPredictions_ctl03_divColor" class="ttmobile_red">
+           <span class="nexttraindesc">
+            Red
+                        &gt;
+                        95th/Dan Ryan
+           </span>
+           <span class="nexttrainarrv">
+            <b>
+             5
+            </b>
+            min
+           </span>
+          </div>
+          <div id="ctl02_rptPredictions_ctl04_divColor" class="ttmobile_red">
+           <span class="nexttraindesc">
+            Red
+                        &gt;
+                        95th/Dan Ryan
+           </span>
+           <span class="nexttrainarrv">
+            <b>
+             8
+            </b>
+            min
+           </span>
+          </div>
+          <div id="ctl02_rptPredictions_ctl05_divColor" class="ttmobile_red">
+           <span class="nexttraindesc">
+            Red
+                        &gt;
+                        95th/Dan Ryan
+           </span>
+           <span class="nexttrainarrv">
+            <b>
+             13
+            </b>
+            min
+           </span>
+          </div>
+         </div>
+         <div>
+          <a href="/mobile/traintracker.aspx">
+           <img alt="CTA Train Tracker(sm) Mobile New Stop" style="border-right-width: 0px; border-top-width: 0px;
+                border-bottom-width: 0px; border-left-width: 0px;" src="/images/global/ttmobile_newstopbutton.gif" />
+          </a>
+          <input type="image" name="ctl02$imgBtnOptions" id="ctl02_imgBtnOptions" src="/images/global/ttmobile_optionsbutton.gif" alt="Options" border="0" />
+          <input type="image" name="ctl02$imgBtnRefresh" id="ctl02_imgBtnRefresh" src="/images/global/ttmobile_refreshbutton.gif" alt="Refresh" border="0" />
+         </div>
+        </div>
+        <div>
+         <hr class="tt_mobile_whiterule" />
+         <p>
+          Results with an asterisk (*) indicate that information is based on scheduled arrival/departure times.
+         </p>
+        </div>
+        <div class="ftrwrpr">
+         <div>
+          <a href="/mobile/help.aspx">
+           <img alt="CTA Train Tracker(sm) Mobile Help" style="border-right-width: 0px; border-top-width: 0px;
+            border-bottom-width: 0px; border-left-width: 0px" src="/images/global/ttmobile_helpbutton.gif" />
+          </a>
+          <a href="/mobile">
+           <img alt="Back to Mobile Home" style="border-right-width: 0px; border-top-width: 0px;
+                    border-bottom-width: 0px; border-left-width: 0px" src="/images/global/ttmobile_backtomobilehome.gif" />
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </form>
+  <script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+   var pageTracker = _gat._getTracker("UA-6691317-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+  </script>
+ </body>
+</html>
+
