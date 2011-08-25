@@ -106,7 +106,7 @@ def getStopETA(sid):
             seta['color'] = tr_col.strip()
             seta['dest'] = tr_dest.strip()
             # ipshell()
-            eta_time = teta.findNext('b').string
+            eta_time = (teta.findNext('b')).string
             eta_time_acc = teta.contents[2].strip()
             seta['eta'] = eta_time + ' ' +eta_time_acc
             stop_etas.append(seta)
