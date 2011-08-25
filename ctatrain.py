@@ -83,12 +83,33 @@ def getStopETA(sid):
     eta_pg = urllib2.urlopen(query_url).read()
     soup = BeautifulSoup(eta_pg)
 
-    # Stuff is in DIV ctl02_pnlMain
-    pnlmain_div = soup.find('div', 'ctl02_pnlMain')
+    # Stuff is in id DIV ctl02_pnlMain
+    pnlmain_div = soup.findNext(attrs={'id':re.compile('pnlMain$')})
     time = pnlmain_div.findNext('div', 'ttmobile_instruction').string
     station = pnlmain_div.findNext('div', 'ttmobile_stationname').string
-    eta_div = pnlmain_div.findNext()
-    return soup.prettify()
+    eta_div = pnlmain_div.findNext('div', attrs={'id':'ttmobile_arrivalbuttons'})
+    etas = eta_div.findAll('div')
+
+    stop_etas = []
+    curr_direction = ''
+    for eta in etas:
+        seta = {}
+        if eta['class'].startswith('ttmobile_'):
+            train = eta.findNext('span', 'nexttraindesc')
+            teta = eta.findNext('span', 'nexttrainarrv')
+            trainstr = train.string.strip()
+            tr_col,sep,tr_dest = trainstr.partition('&gt;')
+            print " % % " % tr_col, tr_dest 
+            seta['color'] = tr_col.strip()
+            seta['dest'] = tr_col.strip()
+            eta_time = teta.findNext('b').string
+            eta_time_acc = teta.string
+            seta['eta'] = eta_time + eta_time_acc
+            stop_etas.append(seta)
+        else:
+            continue
+
+    return stop_etas
 
 # API interface
 def printTrainList(pretty):
@@ -112,7 +133,14 @@ def printStops(rid, pretty):
             print stop['name'] + ',' + stop['id']
 
 def printETA(sid, pretty):
-    print getStopETA(sid)
+    etas = getStopETA(sid)
+    
+    if(pretty):
+        for eta in etas:
+            print eta['color'] + ' to ' + eta['dest'] + ' arriving in ' + eta['eta']
+    else:
+        for eta in etas:
+            print eta['color'] + ',' + eta['dest'] + ',' + eta['eta']
 
 # Main method
 if __name__ == '__main__':
