@@ -2,6 +2,7 @@
 
 import urllib2, re, sys, optparse
 from BeautifulSoup import BeautifulSoup 
+# from IPython.Shell import IPShellEmbed
 
 site_url = 'http://www.transitchicago.com/mobile/'
 base_url = site_url + 'traintracker.aspx'
@@ -79,12 +80,13 @@ def getStopsById(rid):
     return stops
 
 def getStopETA(sid):
+    # ipshell = IPShellEmbed()
     query_url = seta_url + sid
     eta_pg = urllib2.urlopen(query_url).read()
     soup = BeautifulSoup(eta_pg)
 
     # Stuff is in id DIV ctl02_pnlMain
-    pnlmain_div = soup.findNext(attrs={'id':re.compile('pnlMain$')})
+    pnlmain_div = (soup.findAll('div', attrs={'id':'ctl02_pnlMain'}))[0]
     time = pnlmain_div.findNext('div', 'ttmobile_instruction').string
     station = pnlmain_div.findNext('div', 'ttmobile_stationname').string
     eta_div = pnlmain_div.findNext('div', attrs={'id':'ttmobile_arrivalbuttons'})
@@ -99,12 +101,14 @@ def getStopETA(sid):
             teta = eta.findNext('span', 'nexttrainarrv')
             trainstr = train.string.strip()
             tr_col,sep,tr_dest = trainstr.partition('&gt;')
-            print " % % " % tr_col, tr_dest 
+            # print " % % " % tr_col.strip(), tr_dest.strip()
+            # ipshell()
             seta['color'] = tr_col.strip()
-            seta['dest'] = tr_col.strip()
+            seta['dest'] = tr_dest.strip()
+            # ipshell()
             eta_time = teta.findNext('b').string
-            eta_time_acc = teta.string
-            seta['eta'] = eta_time + eta_time_acc
+            eta_time_acc = teta.contents[2].strip()
+            seta['eta'] = eta_time + ' ' +eta_time_acc
             stop_etas.append(seta)
         else:
             continue
